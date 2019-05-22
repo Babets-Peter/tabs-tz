@@ -41,9 +41,9 @@ const handlerClick = (evt) =>
 				.then(data => responseData.set(evt.textContent,data))
 				.then( _ => appearData(evt.textContent))
 
-				.catch(e => console.log(e));
+				.catch(err => console.log(err));
 		}
-		
+
 		appearData(evt.textContent);
 		
 };
